@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@media screen and (min-width: 725px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  main > :nth-child(2n + 1) {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  main {
+    grid-template-rows: 1fr 1fr;
+  }
+  h1 {
+    font-size: 3vh;
+  }
+  header > h2 {
+    font-size: 2vh;
+  }
+  main > :nth-child(2n + 1) {
+    margin: 2vh 2vw 0;
+  }
+}
+
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/wet-monstera-deliciosa-plant-leaves-garden.jpg");
+  background-repeat: no-repeat;
+}
+
+main {
+  display: grid;
+  grid-column-gap: 2vw;
+  grid-row-gap: 4vh;
+}
+
+main > * {
+  padding: 2vh 4vw;
+  margin-top: 2vh;
+}
+
+main > :nth-child(2n + 1) {
+  background-image: url("assets/morocco.png");
+  background-blend-mode: saturation;
+  background-repeat: repeat;
+  border: 1px solid gray;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content; /* або вкажіть фіксоване значення в пікселях, наприклад, height: 400px; */
+}
+
+.program > .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  border-radius: 25px;
+  margin-top: 2vh;
+}
+
+.birthdayTable {
+  margin-top: 2vh;
+  width: 100%;
+  border: 1px solid black;
+}

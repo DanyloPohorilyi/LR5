@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №6</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Лабораторна робота №1. JavaScript</h1>
+        <h2>Виконав студент групи КН-31 Погорілий Данило</h2>
+    </header>
+    <main>
+        <div class="text">
+            <h2>Завдання на лабораторну роботу</h2>
+            <p>
+                Створити масиви значень:
+            </p>
+            <ul>
+                <li>ім’я друга;</li>
+                <li>дата народження;</li>
+                <li>номер телефону (допускаються пусті значення).</li>
+            </ul>
+            <p>
+                За 3 дні потрібно відправити вітальну листівку, а в день народження
+                поздоровити іменинника особисто по телефону. Вивести повідомлення про
+                необхідність відправлення листівки чи телефонного дзвінка. Вивести додаткове
+                повідомлення, якщо номер телефона не вказано.
+            </p>
+        </div>
+        <div class="program">
+            <h2>Програма</h2>
+            <button class="btn" type="button" onclick="checkBirthdays()">Нагадай мені!</button>
+            <table id="birthdayTable" class="birthdayTable">
+                <thead>
+                    <th>Ім'я</th>
+                    <th>Дата народження</th>
+                    <th>Телефон</th>
+                    <th>Повідомлення</th>
+                </thead>
+            </table>
+        </div>
+
+    </main>
+</body>
+
+</html>
