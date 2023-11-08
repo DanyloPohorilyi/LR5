@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 725px) {
   main {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
   }
   main > :nth-child(2n + 1) {
     margin-left: 2vw;
@@ -55,6 +55,7 @@ main > :nth-child(2n + 1) {
   background-blend-mode: saturation;
   background-repeat: repeat;
   border: 1px solid gray;
+  height: fit-content;
 }
 
 .program {
@@ -82,5 +83,15 @@ main > :nth-child(2n + 1) {
 .birthdayTable {
   margin-top: 2vh;
   width: 100%;
+  border-collapse: collapse;
+}
+.birthdayTable,
+th,
+td {
   border: 1px solid black;
+}
+th {
+  background-color: black;
+  color: white;
+  font-weight: 600;
 }
