@@ -41,7 +41,7 @@ function checkBirthdays() {
     var table = document.getElementById("birthdayTable");
 
     // Очистити попередні рядки таблиці перед додаванням нових
-    table.innerHTML = "<tr><th>Ім'я</th><th>Дата народження</th><th>Телефон</th><th>Повідомлення</th></tr>";
+    table.innerHTML = "<thead><th>Ім'я</th><th>Дата народження</th><th>Телефон</th><th>Повідомлення</th></thead>";
 
     for (var i = 0; i < birthdaysArr.length; i++) {
         var row = table.insertRow(-1);
